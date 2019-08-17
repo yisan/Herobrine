@@ -151,6 +151,9 @@
     <ClCompile Include="tcp_client.cpp" />
     <ClCompile Include="tcp_server.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README_cn.md" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
