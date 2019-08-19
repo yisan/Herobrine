@@ -3,12 +3,12 @@
 // Author: ShenMian
 // 统计socket个数
 
+#include "winsock2.h"
+#include "type.h"
 
 #ifndef SOCKET_H_
 #define SOCKET_H_
 
-#include <winsock2.h>
-#include "type.h"
 
 // WSA自动初始化和释放
 class Socket

@@ -4,10 +4,8 @@
 // HIM控制端: 命令行用户接口
 // 程序入口
 
-// Windows
-//	cmd::clear()
-
 #include "pch.h"
+#include "slave.h"
 
 namespace cmd
 {
@@ -20,6 +18,13 @@ deque<string>		hist;	// 历史记录
 // 释放资源, 结束程序
 void exit()
 {
+	if(Slave::size())
+	{
+		print::warn("还有会话未退出, 是否直接关闭控制台?[Y/n]");
+		char choice = _getch();
+		if(choice == 'n' || choice == 'N')
+			return;
+	}
 	::exit(0);
 }
 
@@ -100,7 +105,6 @@ void banner()
 void console()
 {
 	short i, j;
-	short pList, pHist;
 	const char* list[] = {	// 命令匹配列表
 		"bind",
 		"cls",
@@ -113,7 +117,7 @@ void console()
 		"use"
 	};
 	ushort list_size = sizeof(list)/sizeof(char*);
-	string cmd;					// 命令
+	string cmd;	// 命令
 
 	while(true)
 	{
@@ -132,8 +136,8 @@ void console()
 
 		cmd.clear();
 
-		pList	= -1;
-		pHist	= -1;
+		short pList	= -1;	// 当前匹配命令在list[]中的下标, 没有匹配项时为-1
+		short pHist	= -1;	// 当前选中的历史命令在history中的下标
 
 		while(true)
 		{
@@ -168,13 +172,6 @@ void console()
 					cmd		= hist[pHist];
 					continue;
 				}
-
-				// 左右键 光标移动
-				if(code == 75)	// 左
-				;
-
-				if(code == 77)	// 右
-				;
 
 				continue;
 			}

@@ -1,3 +1,6 @@
+// Copyright 2019 SMS
+// License(GPL)
+// Author: ShenMian
 
 #include "pch.h"
 
@@ -35,18 +38,18 @@ void screenshot()
 void keyscan()
 {
 	if(arg[1] == "start")	// 开始击键嗅探
-		;
-	else
-		if(arg[1] == "dump")	// 输出嗅探结果
+	{
+
+	}
+	else if(arg[1] == "dump")	// 输出嗅探结果
 			;
-		else
-			if(arg[1] == "stop")	// 停止击键嗅探
-				;
-			else
-			{
-				print::err("参数无效");
-				return;
-			}
+	else if(arg[1] == "stop")	// 停止击键嗅探
+			;
+	else
+	{
+		print::err("参数无效");
+		return;
+	}
 }
 
 }

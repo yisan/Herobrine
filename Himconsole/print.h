@@ -2,12 +2,12 @@
 // License(GPL)
 // Author: ShenMian
 
-#include <stdio.h>
 #include "type.h"
 #include "attr.h"
 
 #ifndef PRINT_H_
 #define PRINT_H_
+
 
 namespace print
 {
@@ -18,5 +18,6 @@ void err(string);
 void warn(string);
 
 }	// namespace print
+
 
 #endif	// PRINT_H_

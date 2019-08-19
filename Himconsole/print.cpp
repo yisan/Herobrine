@@ -3,6 +3,7 @@
 // Author: ShenMian
 
 #include "print.h"
+#include <stdio.h>
 
 namespace print
 {

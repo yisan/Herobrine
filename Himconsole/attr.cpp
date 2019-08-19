@@ -4,6 +4,8 @@
 // ¿ØÖÆ×ÖÌåÊôĞÔ
 
 #include "attr.h"
+#include "type.h"
+#include <windows.h>
 
 namespace attr
 {

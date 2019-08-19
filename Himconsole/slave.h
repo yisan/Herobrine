@@ -10,7 +10,7 @@
 #define SLAVE_H_
 
 
-class Slave
+class Slave : public TCPClient
 {
 public:
 	Slave();
@@ -19,8 +19,6 @@ public:
 	static ushort size();
 
 private:
-	TCPClient	sock;
-
 	os_info		os_;
 	user_info	user_;
 

@@ -3,9 +3,6 @@
 // Author: ShenMian
 // ¿ØÖÆ×ÖÌåÊôĞÔ
 
-#include <windows.h>
-#include "type.h"
-
 #ifndef ATTR_H_
 #define ATTR_H_
 

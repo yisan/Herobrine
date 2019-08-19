@@ -3,7 +3,6 @@
 // Author: ShenMian
 
 #include "socket.h"
-#include <conio.h>
 
 uint Socket::num_ = 0;
 
