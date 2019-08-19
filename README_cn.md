@@ -1,6 +1,8 @@
 
 # Herobrine
 
+![横幅](banner.jpg)
+
 详情请翻阅[**Wiki**](https://gitee.com/ShenMian/Herobrine/wikis/).
 
  **特点**  
@@ -10,9 +12,9 @@
 - 免杀  
     利用无害的被控端中的远程执行漏洞来植入代码, 使HIM直接在内存中运行而杀毒软件和目标浑然不觉.  
 - 多平台  
-    Himconsole和HIM支持Windows和Linux等多个平台.
+    Himconsole和HIM支持Windows和Linux等多个平台.  
 - MySQL  
-    可以利用MySQL开源数据库存储数据, 使团队协作变得轻松简单, 并且可以随时随地连接数据库来管理资源, 无需担心本地数据备份/同步等问题.
+    可以利用MySQL开源数据库存储数据, 使团队协作变得轻松简单, 并且可以随时随地连接数据库来管理资源, 无需担心本地数据备份/同步等问题.  
 - 开源  
     Herobrine遵循GPL协议, 已宣布永久开放源代码.
 
