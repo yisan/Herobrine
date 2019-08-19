@@ -3,8 +3,8 @@
 // Author: ShenMian
 // 被控端
 
-#include "type.h"
 #include "tcp_client.h"
+#include "type.h"
 
 #ifndef SLAVE_H_
 #define SLAVE_H_
@@ -20,7 +20,7 @@ public:
 
 private:
 	os_info		os_;
-	user_info	user_;
+	user_info user_;
 
 	static ushort size_;	// 实例总数
 };

@@ -3,6 +3,8 @@
 // Author: ShenMian
 
 #include "pch.h"
+#include "print.h"
+#include "type.h"
 
 namespace him
 {

@@ -7,16 +7,11 @@
 #define PCH_H_
 
 // C 标准库
-#include <stdio.h>
 #include <conio.h>
 #include <limits.h>
+#include <stdio.h>
 
 // C++ 标准库
 #include <thread>
-
-// 项目
-#include "type.h"
-#include "attr.h"
-#include "print.h"
 
 #endif	// PCH_H_

@@ -11,4 +11,3 @@ ushort Slave::size()
 {
 	return size_;
 }
-

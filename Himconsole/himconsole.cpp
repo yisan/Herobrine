@@ -5,12 +5,12 @@
 // 程序入口
 
 #include "pch.h"
+#include "print.h"
 #include "slave.h"
 
 namespace cmd
 {
-
-ushort hist_size	= 10;	// 命令历史记录上限
+ushort hist_size = 10;	// 命令历史记录上限
 
 vector<string>	arg;	// 参数
 deque<string>		hist;	// 历史记录

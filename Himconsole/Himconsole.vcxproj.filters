@@ -70,5 +70,8 @@
     <None Include="..\README_cn.md">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="..\.clang-format">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

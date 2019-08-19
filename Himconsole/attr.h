@@ -8,7 +8,6 @@
 
 namespace attr
 {
-
 void init();
 
 void rest();
@@ -23,7 +22,7 @@ namespace fore
 	void yellow();
 	void gray();
 	void white();
-}	// namespcae fore
+}	// namespace fore
 
 namespace back
 {
