@@ -4,9 +4,6 @@
 // HIM控制端: 命令行用户接口
 // 程序入口
 
-// Windows
-// 	cmd::clear()
-
 #include "pch.h"
 
 namespace cmd
