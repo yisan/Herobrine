@@ -134,22 +134,11 @@
     <ClInclude Include="attr.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="print.h" />
-    <ClInclude Include="slave.h" />
-    <ClInclude Include="socket.h" />
-    <ClInclude Include="tcp_client.h" />
-    <ClInclude Include="tcp_server.h" />
     <ClInclude Include="type.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="attr.cpp" />
-    <ClCompile Include="himconsole.cpp">
-      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-    </ClCompile>
     <ClCompile Include="print.cpp" />
-    <ClCompile Include="slave.cpp" />
-    <ClCompile Include="socket.cpp" />
-    <ClCompile Include="tcp_client.cpp" />
-    <ClCompile Include="tcp_server.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -24,18 +24,6 @@
     <ClInclude Include="print.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="slave.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="socket.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="tcp_client.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="tcp_server.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="type.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -44,22 +32,7 @@
     <ClCompile Include="attr.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="himconsole.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="print.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="slave.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="socket.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="tcp_client.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="tcp_server.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
