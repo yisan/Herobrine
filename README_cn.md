@@ -1,5 +1,5 @@
 
-![横幅](banner.jpg)
+![横幅](banner_cn.jpg)
 
 详情请翻阅[**Wiki**](https://gitee.com/ShenMian/Herobrine/wikis/).
 
