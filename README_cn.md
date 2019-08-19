@@ -1,6 +1,4 @@
 
-# Herobrine
-
 ![横幅](banner.jpg)
 
 详情请翻阅[**Wiki**](https://gitee.com/ShenMian/Herobrine/wikis/).
