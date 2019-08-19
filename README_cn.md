@@ -1,6 +1,8 @@
 
 # Herobrine
 
+详情请翻阅[**Wiki**](https://gitee.com/ShenMian/Herobrine/wikis/).
+
  **特点**  
 (部分正在实现)  
 - 安全  
