@@ -1,7 +1,7 @@
 // Copyright 2019 SMS
 // License(GPL)
 // Author: ShenMian
-// TCP客户端
+// Socket TCP 客户端
 
 #include "socket.h"
 
