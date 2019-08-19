@@ -1,6 +1,8 @@
 // Copyright 2019 SMS
 // License(GPL)
 // Author: ShenMian
+// 统计socket个数
+
 
 #ifndef SOCKET_H_
 #define SOCKET_H_
@@ -18,5 +20,6 @@ public:
 private:
 	static uint num_;	// socket总数
 };
+
 
 #endif	// SOCKET_H_

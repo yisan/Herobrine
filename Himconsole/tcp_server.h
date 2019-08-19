@@ -1,11 +1,13 @@
 // Copyright 2019 SMS
 // License(GPL)
 // Author: ShenMian
+// TCP·þÎñ¶Ë
+
+#include "socket.h"
 
 #ifndef TCPSERVER_H_
 #define TCPSERVER_H_
 
-#include "socket.h"
 
 class TCPServer : public Socket
 {
@@ -28,5 +30,6 @@ private:
 	SOCKET			sock_;
 	sockaddr_in	addr_;
 };
+
 
 #endif	// TCPSERVER_H_

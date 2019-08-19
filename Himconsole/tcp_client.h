@@ -1,11 +1,13 @@
 // Copyright 2019 SMS
 // License(GPL)
 // Author: ShenMian
+// TCP¿Í»§¶Ë
+
+#include "socket.h"
 
 #ifndef TCPCLIENT_H_
 #define TCPCLIENT_H_
 
-#include "socket.h"
 
 class TCPClient : public Socket
 {
@@ -27,5 +29,6 @@ private:
 	SOCKET			sock_;
 	sockaddr_in	addr_;
 };
+
 
 #endif	// TCPCLIENT_H_

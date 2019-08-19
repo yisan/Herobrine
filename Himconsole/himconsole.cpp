@@ -9,13 +9,12 @@
 
 #include "pch.h"
 
-namespace cmd
+namespace console
 {
 
 ushort hist_size	= 10;	// 命令历史记录上限
-
-vector<string>	arg;	// 参数
-deque<string>		hist;	// 历史记录
+deque<string>		hist;		// 历史记录
+vector<string>	arg;		// 参数
 
 // 释放资源, 结束程序
 void exit()
@@ -23,11 +22,13 @@ void exit()
 	::exit(0);
 }
 
+// 清空屏幕
 void clear()
 {
 	system("cls");
 }
 
+// 命令帮助
 void help()
 {
 	if(arg.size() > 2)
@@ -59,6 +60,7 @@ void help()
 		print::err("暂无该命令的帮助信息");
 }
 
+// 命令历史
 void history()
 {
 	ushort i;
@@ -67,6 +69,7 @@ void history()
 		printf("%-2d %s\n", i, hist[i].c_str());
 }
 
+// 数据库
 void db()
 {
 	// 初始化数据库
@@ -75,6 +78,7 @@ void db()
 	}
 }
 
+// 横幅
 void banner()
 {
 	printf(
@@ -337,8 +341,8 @@ void init()
 int main(int argc, char* argv[])
 {
 	init();
-	cmd::banner();
+	console::banner();
 	// TODO: 解析参数
-	cmd::console();
+	console::console();
 	return 0;
 }

@@ -150,6 +150,7 @@
     <ClCompile Include="socket.cpp" />
     <ClCompile Include="tcp_client.cpp" />
     <ClCompile Include="tcp_server.cpp" />
+    <ClCompile Include="him.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README_cn.md" />
