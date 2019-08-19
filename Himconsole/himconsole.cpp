@@ -5,7 +5,7 @@
 // ³ÌÐòÈë¿Ú
 
 // Windows
-// 	cmd::clear()
+//	cmd::clear()
 
 #include "pch.h"
 
