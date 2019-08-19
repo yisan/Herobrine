@@ -38,16 +38,16 @@ void help()
 
 	if(arg.size() == 1)
 		puts(
-			"    命令          描述\n"
-			"    ----          ----\n"
-			"    clear         清空命令行内容\n"
-			"    cls           清空命令行内容\n"
-			"    db            操作数据库\n"
-			"    exit          退出命令行\n"
-			"    help          显示帮助信息\n"
-			"    quit          退出命令行\n"
-			"    ls            列出Slave\n"
-			"    use           打开指定Slave会话"
+			"  命令          描述\n"
+			"  ----          ----\n"
+			"  clear         清空命令行内容\n"
+			"  cls           清空命令行内容\n"
+			"  db            操作数据库\n"
+			"  exit          退出命令行\n"
+			"  help          显示帮助信息\n"
+			"  quit          退出命令行\n"
+			"  ls            列出Slave\n"
+			"  use           打开指定Slave会话"
 		);
 	else if(arg[1] == "db")
 		puts(
@@ -63,8 +63,11 @@ void history()
 {
 	ushort i;
 
+	// TODO: 当历史纪录数量超过999会破坏格式
+	puts("  号数 命令");
+	puts("  ---  ---");
 	for(i=0; i<hist.size(); i++)
-		printf("%-2d %s\n", i, hist[i].c_str());
+		printf("  %-3d  %s\n", i, hist[i].c_str());
 }
 
 void db()
