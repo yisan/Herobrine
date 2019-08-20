@@ -3,6 +3,9 @@
 // Author: ShenMian
 // Linux
 
+#ifndef COLOR_H_
+#define COLOR_H_
+
 namespace color
 {
 
@@ -48,4 +51,6 @@ namespace mode
 }	// namespace mode
 
 }	// namespace color
+
+#endif	// COLOR_H_
 

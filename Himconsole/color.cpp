@@ -7,6 +7,7 @@
 
 namespace color
 {
+
 const auto rest_ = "\033[0m";
 
 void rest()
@@ -16,6 +17,7 @@ void rest()
 
 namespace fore
 {
+
 	const auto black_	= "\033[30m";
 	const auto red_		= "\033[31m";
 	const auto green_	= "\033[32m";
@@ -64,10 +66,17 @@ namespace fore
 	{
 		printf(white_);
 	}
+
+	void gray()
+	{
+		printf("\33[8;37m");
+	}
+
 }	// namespace fore
 
 namespace back
 {
+
 	const auto black_	= "\033[40m";
 	const auto red_		= "\033[41m";
 	const auto green_	= "\033[42m";
@@ -116,10 +125,17 @@ namespace back
 	{
 		printf(white_);
 	}
+
+	void gray()
+	{
+		printf("\33[8;47m");
+	}
+
 }	// namespace back
 
 namespace mode
 {
+
 	const auto bold_			= "\033[1m";
 	const auto underline_	= "\033[4m";
 	const auto blink_			= "\033[5m";
@@ -150,6 +166,7 @@ namespace mode
 	{
 		printf(hide_);
 	}
+
 }	// namespace mode
 
 }	// namespace color
