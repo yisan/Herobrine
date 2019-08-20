@@ -2,9 +2,7 @@
 // License(GPL)
 // Author: ShenMian
 
-#include "pch.h"
 #include "print.h"
-#include "type.h"
 
 namespace him
 {
@@ -39,14 +37,13 @@ void screenshot()
 // 击键嗅探
 void keyscan()
 {
-	if(arg[1] == "start")	// 开始击键嗅探
+	if (arg[1] == "start")			// 开始击键嗅探
 	{
-
 	}
-	else if(arg[1] == "dump")	// 输出嗅探结果
-			;
-	else if(arg[1] == "stop")	// 停止击键嗅探
-			;
+	else if (arg[1] == "dump")	// 输出嗅探结果
+		;
+	else if (arg[1] == "stop")	// 停止击键嗅探
+		;
 	else
 	{
 		print::err("参数无效");

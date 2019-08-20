@@ -109,7 +109,6 @@ RawStringFormats:
       - 'c++'
       - 'C++'
     CanonicalDelimiter: ''
-    BasedOnStyle:    google
   - Language:        TextProto
     Delimiters:
       - pb

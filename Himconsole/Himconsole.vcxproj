@@ -70,7 +70,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ReferencePath>C:\Users\shenm\source\repos\Himconsole\Himconsole\lib;$(ReferencePath)</ReferencePath>
+    <ReferencePath>$(ReferencePath);</ReferencePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -80,10 +81,12 @@
       <ConformanceMode>true</ConformanceMode>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>D:\ProgramData\Programming\Boost;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib;D:\ProgramData\Programming\Boost\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -96,6 +99,7 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -131,8 +135,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="cmd.h" />
     <ClInclude Include="color.h" />
-    <ClInclude Include="pch.h" />
     <ClInclude Include="print.h" />
     <ClInclude Include="slave.h" />
     <ClInclude Include="socket.h" />
@@ -141,11 +145,13 @@
     <ClInclude Include="type.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="cmd.cpp" />
     <ClCompile Include="color.cpp" />
     <ClCompile Include="himconsole.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <ClCompile Include="print.cpp" />
+    <ClCompile Include="regex.cpp" />
     <ClCompile Include="slave.cpp" />
     <ClCompile Include="socket.cpp" />
     <ClCompile Include="tcp_client.cpp" />
@@ -155,6 +161,9 @@
   <ItemGroup>
     <None Include="..\.clang-format" />
     <None Include="..\README_cn.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Icon.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
