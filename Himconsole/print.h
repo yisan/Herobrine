@@ -2,9 +2,7 @@
 // License(GPL)
 // Author: ShenMian
 
-#include <stdio.h>
 #include "type.h"
-#include "attr.h"
 
 #ifndef PRINT_H_
 #define PRINT_H_

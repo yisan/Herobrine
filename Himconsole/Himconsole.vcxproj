@@ -131,13 +131,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="attr.h" />
+    <ClInclude Include="color.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="print.h" />
     <ClInclude Include="type.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="attr.cpp" />
+    <ClCompile Include="color.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="print.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

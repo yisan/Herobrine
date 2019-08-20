@@ -3,43 +3,45 @@
 // Author: ShenMian
 
 #include "print.h"
+#include <stdio.h>
+#include "color.h"
 
 namespace print
 {
 
 void info(const string str)
 {
-	attr::fore::blue();
-	attr::fore::light();
+	color::fore::blue();
+	color::mode::bold();
 	printf("[*] ");
-	attr::rest();
+	color::rest();
 	puts(str.c_str());
 }
 
 void good(const string str)
 {
-	attr::fore::green();
-	attr::fore::light();
+	color::fore::green();
+	color::mode::bold();
 	printf("[+] ");
-	attr::rest();
+	color::rest();
 	puts(str.c_str());
 }
 
 void err(const string str)
 {
-	attr::fore::red();
-	attr::fore::light();
+	color::fore::red();
+	color::mode::bold();
 	printf("[-] ");
-	attr::rest();
+	color::rest();
 	puts(str.c_str());
 }
 
 void warn(const string str)
 {
-	attr::fore::yellow();
-	attr::fore::light();
+	color::fore::yellow();
+	color::mode::bold();
 	printf("[!] ");
-	attr::rest();
+	color::rest();
 	puts(str.c_str());
 }
 
