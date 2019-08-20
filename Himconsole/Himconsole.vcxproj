@@ -131,7 +131,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="attr.h" />
+    <ClInclude Include="color.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="print.h" />
     <ClInclude Include="slave.h" />
@@ -141,7 +141,7 @@
     <ClInclude Include="type.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="attr.cpp" />
+    <ClCompile Include="color.cpp" />
     <ClCompile Include="himconsole.cpp">
       <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>

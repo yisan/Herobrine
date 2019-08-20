@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="attr.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -39,11 +36,11 @@
     <ClInclude Include="type.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="color.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="attr.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="himconsole.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -63,6 +60,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="him.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="color.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

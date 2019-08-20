@@ -2,8 +2,8 @@
 // License(GPL)
 // Author: ShenMian
 
+#include "color.h"
 #include "type.h"
-#include "attr.h"
 
 #ifndef PRINT_H_
 #define PRINT_H_

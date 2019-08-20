@@ -123,13 +123,13 @@ void console()
 	{
 		// 输出命令提示符
 		_putch('\n');
-		attr::underscore();
+		color::mode::underline();
 		printf("him");
-		attr::rest();
+		color::rest();
 		printf("> ");
 
-		attr::fore::white();
-		attr::fore::light();
+		color::fore::white();
+		color::mode::bold();
 
 		if(hist.size() >= hist_size)	// 历史记录数量达到上限
 			hist.pop_back();						// 将最早的记录出队
@@ -247,10 +247,10 @@ void console()
 				if(j == cmd.size() && cmd.size() != 0)
 				{
 					pList = i;
-					attr::fore::gray();
+					color::fore::gray();
 					printf("%s", &list[pList][cmd.size()]);
-					attr::fore::white();
-					attr::fore::light();
+					color::fore::white();
+					color::mode::bold();
 					for(j=cmd.size(); j<strlen(list[pList]); j++)
 						_putch('\b');
 					break;
@@ -274,7 +274,7 @@ void console()
 				break;
 			}
 		}
-		attr::rest();
+		color::rest();
 
 		// 命令长度为0
 		if(cmd.size() == 0)
@@ -327,16 +327,9 @@ void console()
 }	// namespace cmd
 
 
-// 初始化
-void init()
-{
-	attr::init();
-}
-
 
 int main(int argc, char* argv[])
 {
-	init();
 	cmd::banner();
 	// TODO: 解析参数
 	cmd::console();
