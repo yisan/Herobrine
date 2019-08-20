@@ -3,8 +3,6 @@
 // Author: ShenMian
 // Windows
 
-#include "type.h"
-
 #ifndef COLOR_H_
 #define COLOR_H_
 

@@ -5,6 +5,7 @@
 
 #include "color.h"
 #include <windows.h>
+#include "type.h"
 
 namespace color
 {
