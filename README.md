@@ -1,6 +1,9 @@
 
 ![横幅](banner_cn.jpg)
 
+# 通知
+目前该项目已经转移到Gitee, 详情请访问: https://gitee.com/ShenMian/Herobrine
+
 详情请翻阅[**Wiki**](https://gitee.com/ShenMian/Herobrine/wikis/).
 
  **特点**  
