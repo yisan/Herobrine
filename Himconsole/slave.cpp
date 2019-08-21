@@ -11,3 +11,8 @@ ushort Slave::size()
 {
 	return size_;
 }
+
+void Slave::os_info(string& os_info)
+{
+	memcpy(&os_info_, os_info.c_str(), os_info.size());
+}

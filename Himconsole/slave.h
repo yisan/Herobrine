@@ -16,10 +16,18 @@ public:
 	Slave();
 	~Slave();
 
-	static ushort size();
+	static	ushort size();
+
+	void		os_info(string&);
+
+	ushort	os_lang();
+
+	ushort	os_mem_total();
+	ushort	os_mem_free();
+	ushort	os_mem_available();
 
 private:
-	os_info		os_;
+	char			os_info_[os_info_size];
 	user_info user_;
 
 	static ushort size_;	// ÊµÀý×ÜÊý
