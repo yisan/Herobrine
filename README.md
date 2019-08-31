@@ -5,10 +5,6 @@
 
 详情请翻阅[**Wiki**](https://gitee.com/ShenMian/Herobrine/wikis/).
 
- **正在进行**   
- - 完善Database类  
- - 重写Wiki  
-
  **特点**  
 (部分正在实现)  
 - 安全  
